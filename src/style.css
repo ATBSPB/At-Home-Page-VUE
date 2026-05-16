@@ -57,20 +57,20 @@ a:focus {
 /* ====== 主题: Light (默认) ====== */
 :root {
   --main_bg_color: url(/static/img/bz-light.jpg);
-  --main_text_color: #1a1a1a;
+  --main_text_color: #ffffff;
   --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
   --purple_text_color: #747bff;
   --text_bg_color: rgba(180, 200, 230, 0.5);
   --item_bg_color: rgba(235, 240, 250, 0.25);
   --item_hover_color: rgba(225, 235, 250, 0.4);
-  --item_left_title_color: #1a1a1a;
-  --item_left_text_color: #3a3a3a;
-  --footer_text_color: #444444;
+  --item_left_title_color: #ffffff;
+  --item_left_text_color: #ffffff;
+  --footer_text_color: #ffffff;
   --left_tag_item: rgba(235, 240, 250, 0.35);
   --card_filter: 0px;
   --back_filter: 20px;
   --back_filter_color: rgba(0, 0, 0, 0.15);
-  --fill: #1a1a1a;
+  --fill: #ffffff;
 }
 
 /* ====== Dark 主题 ====== */
@@ -82,9 +82,9 @@ a:focus {
   --text_bg_color: rgba(26, 4, 48, 0.5);
   --item_bg_color: rgba(19, 20, 24, 0.35);
   --item_hover_color: rgba(19, 23, 27, 0.55);
-  --item_left_title_color: rgb(255, 255, 255);
-  --item_left_text_color: rgb(142, 142, 142);
-  --footer_text_color: #646464;
+  --item_left_title_color: #ffffff;
+  --item_left_text_color: #ffffff;
+  --footer_text_color: #ffffff;
   --left_tag_item: rgba(19, 20, 24, 0.35);
   --card_filter: 0px;
   --back_filter: 20px;
