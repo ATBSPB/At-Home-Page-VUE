@@ -1,0 +1,133 @@
+# At-Home-Page-VUE
+
+一个基于 Vue 3 + Vite 构建的个人主页项目。
+
+## 项目结构
+
+```
+www - VUE/
+├── public/                    # 静态资源目录
+│   └── static/               # 静态文件
+│       ├── fonts/            # 字体文件
+│       ├── img/              # 图片文件
+│       └── svg/              # SVG 图标
+├── src/                      # 源代码目录
+│   ├── components/           # Vue 组件
+│   ├── composables/          # 组合式函数
+│   ├── utils/                # 工具函数
+│   ├── App.vue               # 根组件
+│   ├── main.js               # 入口文件
+│   └── style.css             # 全局样式（主题配置）
+├── index.html                # HTML 模板
+├── package.json              # 项目依赖配置
+├── vite.config.js            # Vite 配置
+└── README.md                 # 项目说明文档
+```
+
+## 常用设置项位置
+
+### 主题配置
+
+主题颜色和样式变量在 `src/style.css` 中定义：
+
+| 设置项 | 变量名 | 位置 |
+|--------|--------|------|
+| 主背景颜色 | `--main_bg_color` | 第 59 行（Light）/ 第 78 行（Dark） |
+| 主文字颜色 | `--main_text_color` | 第 60 行（Light）/ 第 79 行（Dark） |
+| 模块背景颜色 | `--item_bg_color` | 第 64 行（Light）/ 第 83 行（Dark） |
+| 背景滤镜模糊 | `--back_filter` | 第 71 行（Light）/ 第 90 行（Dark） |
+| 背景遮罩颜色 | `--back_filter_color` | 第 72 行（Light）/ 第 91 行（Dark） |
+
+### 壁纸设置
+
+- **Light 主题壁纸**：`public/static/img/bz-light.jpg`
+- **Dark 主题壁纸**：`public/static/img/bz-dark.jpg`
+
+### 组件位置
+
+| 组件 | 位置 | 说明 |
+|------|------|------|
+| 左侧侧边栏 | `src/components/LeftSidebar.vue` | 个人信息和导航 |
+| 页面头部 | `src/components/PageHeader.vue` | 标题和主题切换 |
+| 页面内容 | `src/components/PageContent.vue` | 主要内容区域 |
+| 页面底部 | `src/components/PageFooter.vue` | 版权信息 |
+| 主题切换 | `src/components/ThemeToggle.vue` | 明暗主题切换按钮 |
+| 弹窗组件 | `src/components/PopupModal.vue` | 通用弹窗 |
+| 加载动画 | `src/components/LoadingScreen.vue` | 页面加载动画 |
+
+### 工具函数
+
+- Cookie 操作：`src/utils/cookie.js`
+- 弹窗管理：`src/composables/usePopup.js`
+
+## 快速开始
+
+### 安装依赖
+
+```bash
+npm install
+```
+
+### 开发模式
+
+```bash
+npm run dev
+```
+
+访问 http://localhost:5173/ 查看效果。
+
+### 构建生产版本
+
+```bash
+npm run build
+```
+
+构建产物输出到 `dist/` 目录。
+
+### 预览生产版本
+
+```bash
+npm run preview
+```
+
+## 技术栈
+
+- Vue 3 - 渐进式 JavaScript 框架
+- Vite - 下一代前端构建工具
+- CSS3 - 样式和主题系统
+
+## 主题系统
+
+项目支持 Light 和 Dark 两种主题，通过 `data-theme` 属性切换。主题配置在 `src/style.css` 中使用 CSS 变量定义，便于统一管理和快速修改。
+
+## 文件说明
+
+### 静态资源
+
+- **字体文件** (`public/static/fonts/`)：存放自定义字体
+- **图片文件** (`public/static/img/`)：存放壁纸、头像、图标等图片
+- **SVG 图标** (`public/static/svg/`)：存放可缩放矢量图标
+
+### 源代码
+
+- **组件目录** (`src/components/`)：存放所有 Vue 组件
+- **组合式函数** (`src/composables/`)：存放可复用的组合式逻辑
+- **工具函数** (`src/utils/`)：存放通用工具函数
+
+## 自定义配置
+
+### 修改壁纸
+
+替换 `public/static/img/bz-light.jpg`（Light 主题）或 `public/static/img/bz-dark.jpg`（Dark 主题）。
+
+### 修改主题颜色
+
+编辑 `src/style.css` 中的 CSS 变量，找到对应的主题区块进行修改。
+
+### 添加新组件
+
+在 `src/components/` 目录下创建新的 `.vue` 文件，然后在 `App.vue` 中导入并使用。
+
+## 许可证
+
+MIT License
