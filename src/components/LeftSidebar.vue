@@ -58,7 +58,6 @@ SOFTWARE.
           <div>2026.6</div>
         </li>
         <li>
-        <li>
           <div class="focus"></div>
           <div>实现全站开源与无服务器化</div>
           <div>2026.5</div>
